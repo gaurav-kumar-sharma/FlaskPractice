@@ -1,0 +1,29 @@
+virtual env:
+sudo apt-get install python3-venv
+sudo python3.6 -m venv venv
+source venv/bin/activate
+
+
+flask install:
+pip install flask
+
+installs :
+
+Jinja2-2.10.1
+MarkupSafe-1.1.1
+Werkzeug-0.15.4
+click-7.0
+flask-1.0.3
+itsdangerous-1.1.0
+
+GET request:
+@app.route("/home")
+POST/others:
+@app.route("/home", method=["POST"])
+multiples:
+@app.route("/home", method=["POST", "GET", "PUT"])
+dynamic value in url:
+@app.route("/item/<string:name>")
+def method(name)
+
+
