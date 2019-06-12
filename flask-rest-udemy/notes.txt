@@ -27,3 +27,30 @@ dynamic value in url:
 def method(name)
 
 
+python:
+1. next : gives the first item in the list for first time call and so on: next(list) and next(list, none) to send none if no item found instead of error
+
+flask-restful:
+
+1. create api : api = Api(app)
+2. Create resource: class Item(Resource)
+3. Method name get represent get request and so on
+4. 202 for delaying response
+5. If you want to not to look in headers for content-type -json then pass force=True: request.get_json(force=True)
+6. If you want to not get error while parsing json then pass silent=True in : request.get_json(silent=True)
+7. 400 for bad request
+8. Use JWT for authentication . It register a url "/auth" for authentication For that we create 2 methods authentication(username, password)
+ and identity(payload): first one is called when we call /auth and generation adn JWT token and second one is called when a request is made with that token
+9. JWT: to make a request to be authenticated use the "@jwt_required()" upon that function
+10. We use reqparse to validate inputs from API parser = reqparse.RequestParser()
+11. In sqlite if you want to create a column auto increment then you need to specify it as "INTEGER" rather than int
+
+
+packages:
+flask-RESTful
+flask-JWT
+
+
+To Learn:
+reqparse
+
