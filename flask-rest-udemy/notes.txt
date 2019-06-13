@@ -49,7 +49,7 @@ flask-restful:
 packages:
 flask-RESTful
 flask-JWT
-
+Flask-SQLAlchemy
 
 To Learn:
 reqparse
